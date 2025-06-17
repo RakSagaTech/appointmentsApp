@@ -10,14 +10,14 @@ const AppointmentItem = props => {
     ? 'https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png'
     : 'https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png'
   return (
-    <li>
-      <div>
-        <h1> {title} </h1>
-        <button type="button">
-          <img src={starImageUrl} alt="star" />
+    <li className="appointment-item">
+      <div className="header-container">
+        <h1 className="title"> {title} </h1>
+        <button type="button" className="star-button">
+          <img src={starImageUrl} alt="star" className="star"/>
         </button>
       </div>
-      <p> {date} </p>
+      <p className="date"> {date} </p>
     </li>
   )
 }
