@@ -1,1 +1,172 @@
 /* Write your CSS here */
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  min-height: 100vh;
+}
+
+.responsive-container {
+  width: 90%;
+  max-width: 550px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    width: 80%;
+    max-width: 1120px;
+  }
+}
+
+.appointments-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 86%;
+  max-width: 972px;
+}
+
+.add-appointment-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 64px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .form {
+    width: 45%;
+    max-width: 320px;
+  }
+}
+
+.heading {
+  font-family: 'Roboto';
+  color: #171f46;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .heading {
+    font-size: 32px;
+    margin-bottom: 48px;
+  }
+}
+
+.label {
+  font-family: 'Roboto';
+  color: #7e858e;
+  font-size: 12px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.input {
+  border: 1px solid #7e858e;
+  border-radius: 4px;
+  height: 40px;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+  color: #131415;
+  font-family: 'Roboto';
+  font-size: 12px;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .input {
+    font-size: 14px;
+  }
+}
+
+.add-button {
+  align-self: flex-start;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #8b5cf6;
+  font-family: 'Roboto';
+  font-size: 12px;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.appointments-img {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .appointments-img {
+    display: block;
+    width: 49%;
+  }
+}
+
+.line {
+  border: 1px solid #b5b7c4;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 32px;
+}
+
+.header-with-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+@media screen and (min-width: 768px) {
+  .header-with-filter-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+.appointments-heading {
+  color: #171f46;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .appointments-heading {
+    font-size: 24px;
+  }
+}
+
+.appointments-list {
+  padding-left: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .appointments-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

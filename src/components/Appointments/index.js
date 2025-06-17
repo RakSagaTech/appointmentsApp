@@ -9,40 +9,49 @@ import './index.css'
 class Appointments extends Component {
   state = {
     appointmentsList: [
-      {
-        id: uuidv4(),
-        title: 'Dentist',
-        date: '20 July 2021, Tuesday',
-        isStarred: false,
-      },
     ],
   }
   render() {
     const {appointmentsList} = this.state
     return (
-      <div>
-        <div>
-          <div>
-            <div>
-              <form>
-                <h1> Add Appointment </h1>
-                <label htmlFor="title"> TITLE </label>
-                <input id="title" input="text" />
-                <label htmlFor="date"> DATE </label>
-                <input id="date" type="date" />
-                <button type="submit"> Add </button>
+      <div className="app-container">
+        <div className="responsive-container">
+          <div className="appointments-container">
+            <div className="add-appointment-container">
+              <form className="form">
+                <h1 className="heading"> Add Appointment </h1>
+                <label htmlFor="title" className="label">
+                  {' '}
+                  TITLE{' '}
+                </label>
+                <input
+                  id="title"
+                  input="text"
+                  className="input"
+                  placeholder="Title"
+                />
+                <label htmlFor="date" className="label">
+                  {' '}
+                  DATE{' '}
+                </label>
+                <input id="date" type="date" className="input" />
+                <button type="submit" className="add-button">
+                  {' '}
+                  Add{' '}
+                </button>
               </form>
               <img
                 src="https://assets.ccbp.in/frontend/react-js/appointments-app/appointments-img.png"
                 alt="appointments"
+                className="appointments-img"
               />
             </div>
-            <hr />
-            <div>
-              <h1> Appointments </h1>
+            <hr className="line" />
+            <div className="header-with-filter-container">
+              <h1 className="appointments-heading"> Appointments </h1>
               <button type="button"> Starred </button>
             </div>
-            <ul>
+            <ul className="appointments-list">
               {appointmentsList.map(eachAppointment => (
                 <AppointmentItem
                   key={eachAppointment.id}
